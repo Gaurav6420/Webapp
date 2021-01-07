@@ -1,7 +1,9 @@
 from __future__ import division, print_function
 
 # Import fast.ai Library
-from vision.fastai1.fastai.vision import *
+import os
+
+from vision.fastai1.fastai.vision import Path, ImageDataBunch, cnn_learner, get_transforms, imagenet_stats, open_image
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
