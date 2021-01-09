@@ -1,4 +1,4 @@
-https://download.pytorch.org/whl/cu92/torch-1.7.1%2Bcu92-cp37-cp37m-linux_x86_64.whl
+https://download.pytorch.org/whl/cu92/torch-1.7.1%2Bcu92-cp38-cp38-linux_x86_64.whl
 fastai==1.0.61
  Flask~=1.1.2
 gunicorn
