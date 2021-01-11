@@ -24,7 +24,7 @@ path = Path("path")
 classes = ['NORMAL', 'PNEUMONIA', 'COVID19']
 data2 = ImageDataBunch.single_from_classes(path, classes, ds_tfms=get_transforms(), size=224).normalize(imagenet_stats)
 learn = cnn_learner(data2, models.resnet50)
-learn.load("C:/Users/Gaurav/PycharmProjects/Water-classifier-fastai-master/path/models/stage-1")
+learn.load('stage-1')
 
 
 def model_predict(img_path):
