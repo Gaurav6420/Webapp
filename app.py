@@ -4,12 +4,12 @@ import sys
 import glob
 import re
 from pathlib import Path
-
-# Import fast.ai Library
 import os
 
-from fastai.tabular import models
-from fastai.vision import Path, ImageDataBunch, cnn_learner, get_transforms, imagenet_stats, open_image
+# Import fast.ai Library
+
+from fastai import *
+from fastai.vision import *
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
