@@ -1,4 +1,9 @@
 from __future__ import division, print_function
+# coding=utf-8
+import sys
+import glob
+import re
+from pathlib import Path
 
 # Import fast.ai Library
 import os
@@ -14,9 +19,6 @@ from werkzeug.utils import secure_filename
 # Define a flask app
 app = Flask(__name__)
 
-# path = Path("C:/Users/Gaurav/PycharmProjects/Water-classifier-fastai-master/path/models")
-# classes = ['NORMAL', 'PNEUMONIA', 'COVID19']
-# learn = load_learner(path, 'export.pkl')
 
 path = Path("path")
 classes = ['NORMAL', 'PNEUMONIA', 'COVID19']
@@ -35,7 +37,7 @@ def model_predict(img_path):
     return pred_class
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
     # Main page
     return render_template('index.html')
